@@ -3,10 +3,11 @@
 #include <time.h>
 
 int main() {
-  int num1, num2, num3;
+  int num1, num2;
   srand(time(NULL));
   num1 = rand() % 3;
   num2 = rand() % 3;
+
   if (num1 == num2) {
    if (num1 == 0) {
       printf("철수 : 가위, 영희 : 가위\n비김");
@@ -18,6 +19,7 @@ int main() {
       printf("철수 : 보, 영희 : 보\n비김");
     } 
   }
+
   else if ((num1 == 0 && num2 == 2) || (num1 == 1 && num2 == 0) || (num1 == 2 && num2 == 1)) {
    if (num1 == 0) {
       printf("철수 : 가위, 영희 : 보\n철수 승리");
@@ -29,6 +31,7 @@ int main() {
       printf("철수 : 보, 영희 : 바위\n철수 승리");
     }
   }
+
   else {
    if (num1 == 0) {
       printf("철수 : 가위, 영희 : 바위\n영희 승리");
