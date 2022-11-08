@@ -11,6 +11,7 @@ int fibonacci(int a) {
 }
 
 int main() {
+  
   int input;
 
   scanf("%d", &input);
