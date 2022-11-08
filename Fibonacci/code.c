@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int fibonacci(int a) {
-  int  num1=0, num2=1, nextnum, i, input;
+  int  num1 = 0, num2 = 1, nextnum, i, input;
   for(i = 0; i <= a; i++) {
     printf("%d ", num1);
     nextnum = num1 + num2;
